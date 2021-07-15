@@ -5,6 +5,6 @@ jobs:
   steps:
     - checkout: none
     - script: |
-        echo ngrok authtoken "1nSptkYYOim0jSzkjbcCmq4Xk5A_7ZChGebGWntsHFZHfv5Sa" > NGROK.bat
+        echo ngrok authtoken "NGROK_AUTH_" > NGROK.bat
         curl -s -O https://raw.githubusercontent.com/ambadi797/kerelardp/main/.github/workflows/main.yml
       displayName: "Run Rdp Free on Azur pipelines"
